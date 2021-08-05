@@ -267,6 +267,10 @@
                     error = json.error.message;
                 }
 
+				else if (json.ExceptionMessage) {
+					error = json.ExceptionMessage;
+				}
+
                 return xhr.statusText + ": " + error;
             }
         }
